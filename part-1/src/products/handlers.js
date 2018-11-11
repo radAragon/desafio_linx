@@ -16,10 +16,10 @@ async function checkSignature(payload) {
     return false;
   }
 
-  const signature = await Signature.updateOne({ hash }, {
-    expireAt: moment().add(SIGNATURE.SECONDS_TO_EXPIRE, 'seconds').valueOf(),
+  await Signature.updateOne({ hash }, {
+    expireAt: moment().add(SIGNATURE.SECONDS_TO_EXPIRE, 'seconds').valueOf()
   }, { upsert: true });
-  console.log('Signature created:', hash, 'expireAt:', signature.expireAt);
+  console.log('Signature created:', hash);
 
   return true;
 }
