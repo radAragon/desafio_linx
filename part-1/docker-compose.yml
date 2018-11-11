@@ -13,7 +13,9 @@ services:
       - MYSQL_DATABASE=b2wadds
 
   api:
-    image: node:8-slim
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
     ports:
       - '3000:3000'
     links:
