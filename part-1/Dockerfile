@@ -4,6 +4,6 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm install
+RUN npm install --production
 
-CMD ["node", "src/app"]
+CMD ["node", "src/server"]

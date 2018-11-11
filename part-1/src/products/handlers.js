@@ -4,8 +4,6 @@ const crypto = require('crypto');
 const { SIGNATURE } = require('../config');
 const { Signature, Product } = require('../lib/models');
 
-const SALT_ROUNDS = 8;
-
 
 async function checkSignature(payload) {
   const hash = crypto.createHash('sha256').update(JSON.stringify(payload)).digest('hex');
