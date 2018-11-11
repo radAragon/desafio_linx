@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8-slim
 
 COPY . /app
 
@@ -6,4 +6,4 @@ WORKDIR /app
 
 RUN npm install
 
-CMD ["npm", "start"]
+CMD ["node", "src/app"]

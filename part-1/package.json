@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app",
-    "test": "mocha"
+    "initDB": "docker-compose up -d db",
+    "start": "npm run initDB; MONGO_HOST=localhost node src/server",
+    "test": "npm run initDB; MONGO_HOST=localhost mocha"
   },
   "dependencies": {
+    "bluebird": "^3.5.3",
     "koa": "^2.6.2",
-    "koa-router": "^7.4.0"
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.11"
   },
   "devDependencies": {
     "chai": "^4.2.0",
