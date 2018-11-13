@@ -1,20 +1,35 @@
 # Linx challenge
 
-# Part-1
+## Part-1
 
-A simple API with a Product endpoint that receives POST requests to create and update products but rejecting repetitive payloads (double sends).
+A simple API with a Product endpoint that receives POST requests to create and update products but rejects repetitive payloads within specific time (double sends).
 
-## Requirements:
+### Requirements:
 
 * Docker
 * Node 8+
-* Run: `$ npm install`
+* Run: `$ cd part-1; npm install`
 
-## Usage:
+### Usage:
 
 * Run: `$ npm start`
-* Send POST requests to: `localhost:3000/products`
+* Send POST requests to: `http://localhost:3000/products`
 
-## Test:
+### Test:
 
 * Run: `$ npm test`
+
+---
+
+## Part-2
+
+A basic module that reads a gziped dump file of Products' JSON and writes a Product Index of valid images (at most 3 per Product).
+
+### Requirements:
+
+* Node 8+
+* Run: `$ cd part-2`
+
+### Usage:
+
+* Run: `$ npm start <input dump file path> [<output dump file>]`
