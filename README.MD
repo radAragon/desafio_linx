@@ -32,4 +32,8 @@ A basic module that reads a gziped dump file of Products' JSON and writes a Prod
 
 ### Usage:
 
-* Run: `$ npm start <input dump file path> [<output dump file>]`
+* Run: `$ npm start <input dump file path>`
+
+### Test:
+
+* Run: `$ npm test`

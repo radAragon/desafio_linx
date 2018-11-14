@@ -7,9 +7,14 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node src/parser.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src",
+    "test": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.2"
+  }
 }
