@@ -23,7 +23,7 @@ A simple API with a Product endpoint that receives POST requests to create and u
 
 ## Part-2
 
-A basic module that reads a gziped dump file of Products' JSON and writes a Product Index of valid images (at most 3 per Product).
+A basic module that reads a gziped dump file of Products' JSON and prints the output.
 
 ### Requirements:
 

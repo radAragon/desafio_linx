@@ -42,7 +42,8 @@ async function aggregator(filename) {
     inputStream.on('close', resolve);
   });
 
-  console.log('OUTPUT =>', JSON.stringify(PRODUCT_STACK, null, 2));
+  console.log('/END OF INPUT FILE');
+  console.log(JSON.stringify(PRODUCT_STACK, null, 2));
 }
 
 if (require.main === module) {
